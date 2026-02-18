@@ -65,5 +65,8 @@ npm install
 npm run dev
 
 ---
+### backend render URL - https://rupeeradar-backend.onrender.com
+### frontend render URL - https://rupeeradar.onrender.com
+
 
 Built with focus on data correctness, money handling precision, and clean code structure.
