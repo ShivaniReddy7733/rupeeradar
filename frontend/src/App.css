@@ -1,0 +1,332 @@
+/* ===============================
+   Page Background
+================================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f8fafc, #eef2f7);
+  background-size: 200% 200%;
+  animation: subtleMove 12s ease infinite;
+}
+
+@keyframes subtleMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   Main Container
+================================= */
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===============================
+   Header
+================================= */
+.header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.quote {
+  margin-top: 12px;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+/* ===============================
+   Form
+================================= */
+.form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.form button {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.35);
+}
+
+/* ===============================
+   Summary Cards
+================================= */
+.summary {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+
+.summary-box {
+  flex: 1;
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.25s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.summary-box h3 {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+  letter-spacing: 0.6px;
+}
+
+.summary-box p {
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===============================
+   Monthly Insights
+================================= */
+.monthly-insights {
+  margin-top: 35px;
+  display: flex;
+  gap: 24px;
+}
+
+.insight-box {
+  flex: 1;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.insight-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.insight-box h3 {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.insight-box p {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.increase { color: #16a34a; }
+.decrease { color: #dc2626; }
+
+/* ===============================
+   Category Breakdown (Progress)
+================================= */
+.category-breakdown {
+  margin-top: 40px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.category-breakdown h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.category-row {
+  margin-bottom: 18px;
+}
+
+.category-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+/* ===============================
+   Expense Table
+================================= */
+.expense-table {
+  width: 100%;
+  margin-top: 45px;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+}
+
+th, td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+  font-size: 13px;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:hover {
+  background: #f9fafb;
+  transition: 0.2s ease;
+}
+
+/* ===============================
+   Category Badge
+================================= */
+.category-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  color: #1d4ed8;
+}
+
+/* ===============================
+   Buttons
+================================= */
+.edit-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 8px;
+  transition: all 0.25s ease;
+}
+
+.edit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.45);
+}
+
+.cancel-btn {
+  background: #6b7280;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* ===============================
+   Empty State
+================================= */
+.empty {
+  margin-top: 50px;
+  padding: 50px;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 18px;
+  color: #6b7280;
+  border: 1px dashed #e5e7eb;
+}
+
+.empty h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #374151;
+}
+
+.empty p {
+  margin-top: 10px;
+  font-size: 14px;
+}
