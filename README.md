@@ -65,7 +65,7 @@ npm install
 npm run dev
 
 ---
-### backend render URL - https://rupeeradar-backend.onrender.com
+### backend render URL - https://rupeeradar-backend.onrender.com/expenses
 ### frontend render URL - https://rupeeradar.onrender.com
 
 
