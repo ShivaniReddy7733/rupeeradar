@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://rupeeradar-backend.onrender.com/expenses";
 
 function App() {
   const [expenses, setExpenses] = useState([]);
